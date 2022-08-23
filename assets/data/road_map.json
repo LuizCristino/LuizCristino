@@ -1,0 +1,9 @@
+[
+  { "type": "start" },
+  { "type": "node", "done": false, "label": "Add theme switch button" },
+  { "type": "node", "done": false, "label": "Add i18n - English" },
+  { "type": "node", "done": false, "label": "Add filter to technologies" },
+  { "type": "node", "done": false, "label": "Add easter eggs" },
+  { "type": "node", "done": false, "label": "Add i18n - French" },
+  { "type": "end" }
+]
