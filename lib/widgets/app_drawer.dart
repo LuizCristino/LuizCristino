@@ -111,7 +111,8 @@ Widget builderHeader(BuildContext context) {
         children: <Widget>[
           CircleAvatar(
             radius: 48,
-            backgroundImage: AssetImage('images/profiles/profile_$number.png'),
+            backgroundImage:
+                AssetImage('assets/images/profiles/profile_$number.png'),
           ),
           const Text(
             Texts.author,

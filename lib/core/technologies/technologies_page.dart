@@ -19,8 +19,8 @@ class TechnologiesPage extends StatelessWidget {
         context: context,
         removeTop: true,
         child: FutureBuilder<String>(
-          future:
-              DefaultAssetBundle.of(context).loadString('data/dev_skills.json'),
+          future: DefaultAssetBundle.of(context)
+              .loadString('assets/data/dev_skills.json'),
           builder: (context, snapshot) {
             if (!snapshot.hasData) {
               return Container();
