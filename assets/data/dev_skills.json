@@ -1,0 +1,175 @@
+[
+  {
+    "name": "Android",
+    "type": "mobile",
+    "icon": "0xe80f",
+    "languages": ["Java", "Kotlin"],
+    "experience": 70
+  },
+  {
+    "name": "Angular",
+    "type": "frontend",
+    "languages": ["JavaScript", "TypeScript"],
+    "icon": "0xe826",
+    "experience": 30
+  },
+  {
+    "name": "Composer",
+    "type": "tool",
+    "icon": "0xe977",
+    "experience": 60
+  },
+  {
+    "name": "CSS",
+    "type": "frontend",
+    "icon": "0xe81c",
+    "experience": 90
+  },
+  {
+    "name": "Dart",
+    "type": "frontend",
+    "icon": "0xe9b1",
+    "experience": 60
+  },
+  {
+    "name": "Jest",
+    "type": "tool",
+    "languages": ["JavaScript", "TypeScript"],
+    "icon": "0xe9cb",
+    "experience": 50
+  },
+  {
+    "name": "Flutter",
+    "type": "frontend",
+    "languages": ["Dart"],
+    "icon": "0xe975",
+    "experience": 80
+  },
+  {
+    "name": "Git",
+    "type": "tool",
+    "icon": "0xe81d",
+    "experience": 90
+  },
+  {
+    "name": "GitHub",
+    "type": "tool",
+    "icon": "0xea10",
+    "experience": 80
+  },
+  {
+    "name": "GitLab",
+    "type": "tool",
+    "icon": "0xea0e",
+    "experience": 75
+  },
+  {
+    "name": "HTML",
+    "type": "frontend",
+    "icon": "0xe855",
+    "experience": 80
+  },
+  {
+    "name": "Java",
+    "type": "backend",
+    "icon": "0xe85c",
+    "experience": 65
+  },
+  {
+    "name": "JavaScript",
+    "type": "frontend",
+    "icon": "0xe85d",
+    "experience": 90
+  },
+  {
+    "name": "Kotlin",
+    "type": "mobile",
+    "icon": "0xe96f",
+    "experience": 65
+  },
+  {
+    "name": "Laravel",
+    "type": "backend",
+    "icon": "0xe852",
+    "experience": 65
+  },
+  {
+    "name": "MongoDB",
+    "type": "database",
+    "languages": ["NoSQL"],
+    "icon": "0xeb44",
+    "experience": 65
+  },
+  {
+    "name": "MySQL",
+    "type": "database",
+    "languages": ["SQL"],
+    "icon": "0xeb61",
+    "experience": 80
+  },
+  {
+    "name": "NodeJS",
+    "type": "backend",
+    "languages": ["JavaScript", "TypeScript"],
+    "icon": "0xeb6a",
+    "experience": 80
+  },
+  {
+    "name": "PHP",
+    "type": "backend",
+    "icon": "0xeb71",
+    "experience": 80
+  },
+  {
+    "name": "PostgreSQL",
+    "type": "database",
+    "languages": ["SQL"],
+    "icon": "0xeb7d",
+    "experience": 85
+  },
+  {
+    "name": "Python",
+    "type": "backend",
+    "icon": "0xeb89",
+    "experience": 30
+  },
+  {
+    "name": "React",
+    "type": "frontend",
+    "languages": ["JavaScript", "TypeScript"],
+    "icon": "0xe801",
+    "experience": 85
+  },
+  {
+    "name": "React Native",
+    "type": "mobile",
+    "languages": ["JavaScript", "TypeScript"],
+    "icon": "0xe801",
+    "experience": 85
+  },
+  {
+    "name": "Sass",
+    "type": "frontend",
+    "icon": "0xebcb",
+    "experience": 70
+  },
+  {
+    "name": "SQLite",
+    "type": "database",
+    "languages": ["SQL"],
+    "icon": "0xea32",
+    "experience": 85
+  },
+  {
+    "name": "Tailwind",
+    "type": "frontend",
+    "icon": "0xe9df",
+    "experience": 75
+  },
+  {
+    "name": "TypeScript",
+    "type": "frontend",
+    "icon": "0xe9fb",
+    "experience": 80
+  }
+]
