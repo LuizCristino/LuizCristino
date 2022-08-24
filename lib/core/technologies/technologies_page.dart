@@ -43,11 +43,17 @@ class TechnologiesPage extends StatelessWidget {
               context,
             );
 
+            final mainAxisExtent = useBreakpointsValue<double?>(
+              const ValueByBreakpoint(computer: 64, fallback: null),
+              context,
+            );
+
             return Padding(
               padding: const EdgeInsets.all(8),
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: crossAxisCount,
+                  mainAxisExtent: mainAxisExtent,
                   childAspectRatio: 28 / 9,
                   crossAxisSpacing: 4,
                   mainAxisSpacing: 4,
