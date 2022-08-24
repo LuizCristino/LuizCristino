@@ -42,6 +42,7 @@ dependencies:
   lottie: ^1.4.1
   meta: ^1.7.0
   universal_html: ^2.0.8
+  url_strategy: ^0.2.0
 
 dev_dependencies:
   auto_route_generator: ^5.0.0
