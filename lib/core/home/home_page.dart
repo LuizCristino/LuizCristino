@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
     final theme = Theme.of(context);
     final textTheme = theme.textTheme;
 
-    final sizedBox = const SizedBox(height: 8);
+    const sizedBox = SizedBox(height: 8);
 
     final petProjects = List<String>.from([
       'Own OTS (Open Tibia Server) with custom spells made in LUA',
