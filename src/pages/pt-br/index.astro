@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.astro';
+import Hero from '../../components/Hero.astro';
+import About from '../../components/About.astro';
+import Skills from '../../components/Skills.astro';
+import Stats from '../../components/Stats.astro';
+import Contact from '../../components/Contact.astro';
+import Footer from '../../components/Footer.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const locale = 'pt-br';
+const t = useTranslations(locale);
+---
+
+<Layout title={t.meta.title} description={t.meta.description} lang="pt-BR">
+  <Nav t={t} locale={locale} />
+  <main>
+    <Hero t={t} />
+    <About t={t} />
+    <Skills t={t} />
+    <Stats t={t} />
+    <Contact t={t} />
+  </main>
+  <Footer t={t} />
+</Layout>

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Tokyo Night */
+    --background: 237 34% 13%;
+    --foreground: 226 64% 88%;
+
+    --card: 237 34% 16%;
+    --card-foreground: 226 64% 88%;
+
+    --border: 234 27% 25%;
+    --input: 234 27% 25%;
+    --ring: 217 92% 76%;
+
+    --primary: 217 92% 76%;
+    --primary-foreground: 237 34% 13%;
+
+    --secondary: 267 84% 81%;
+    --secondary-foreground: 237 34% 13%;
+
+    --accent: 115 54% 76%;
+    --accent-foreground: 237 34% 13%;
+
+    --muted: 234 27% 22%;
+    --muted-foreground: 226 30% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}

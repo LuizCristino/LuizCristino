@@ -1,0 +1,48 @@
+---
+import { TypeWriter } from './TypeWriter';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<section id="hero" class="min-h-screen flex items-center justify-center px-6 pt-20">
+  <div class="max-w-4xl mx-auto text-center space-y-6 animate-fade-up">
+    <p class="font-mono text-muted-foreground tracking-widest text-sm uppercase">
+      {t.hero.greeting}
+    </p>
+
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-foreground">
+      {t.hero.name}
+    </h1>
+
+    <p class="text-xl md:text-2xl text-muted-foreground h-8">
+      <TypeWriter roles={t.hero.roles} client:load />
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+      >
+        {t.hero.cta}
+      </a>
+      <a
+        href="https://github.com/LuizCristino"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-border text-foreground hover:bg-muted transition-colors"
+      >
+        {t.hero.view_github}
+      </a>
+    </div>
+
+    <div class="pt-12 animate-bounce text-muted-foreground">
+      <a href="#about" aria-label="Scroll down">↓</a>
+    </div>
+  </div>
+</section>

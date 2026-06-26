@@ -1,0 +1,17 @@
+---
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<footer class="py-8 px-6 border-t border-border">
+  <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-muted-foreground">
+    <p>{t.footer.built_with}</p>
+    <p>© {year} Luiz Cristino · {t.footer.rights}</p>
+  </div>
+</footer>

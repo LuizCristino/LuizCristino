@@ -1,0 +1,61 @@
+---
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const links = [
+  {
+    label: t.contact.email,
+    href: 'mailto:luiz.cristino@underwork.com.br',
+    icon: '✉️',
+    sub: 'luiz.cristino@underwork.com.br',
+  },
+  {
+    label: t.contact.linkedin,
+    href: 'https://www.linkedin.com/in/luizpaulocristino/',
+    icon: '💼',
+    sub: 'luizpaulocristino',
+  },
+  {
+    label: t.contact.github,
+    href: 'https://github.com/LuizCristino',
+    icon: '🐙',
+    sub: 'LuizCristino',
+  },
+  {
+    label: t.contact.gitlab,
+    href: 'https://gitlab.com/LuizCristino',
+    icon: '🦊',
+    sub: 'LuizCristino',
+  },
+];
+---
+
+<section id="contact" class="py-28 px-6 bg-card/30">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-foreground mb-2">{t.contact.title}</h2>
+    <div class="h-1 w-16 bg-primary rounded-full mb-6"></div>
+    <p class="text-muted-foreground mb-12 max-w-xl">{t.contact.subtitle}</p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+      {links.map(({ label, href, icon, sub }) => (
+        <a
+          href={href}
+          target={href.startsWith('mailto') ? undefined : '_blank'}
+          rel="noopener noreferrer"
+          class="group flex flex-col items-center gap-3 p-6 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-md hover:shadow-primary/5 transition-all"
+        >
+          <span class="text-3xl">{icon}</span>
+          <span class="text-sm font-semibold text-foreground">{label}</span>
+          <span class="text-xs text-muted-foreground text-center truncate w-full text-center">
+            {sub}
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

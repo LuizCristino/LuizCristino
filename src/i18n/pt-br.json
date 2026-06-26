@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Luiz Cristino — Desenvolvedor Full Stack & Mobile",
+    "description": "Desenvolvedor Full Stack e Mobile especializado em Flutter, React, Node.js e Laravel. Programando desde 2000."
+  },
+  "nav": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "stats": "Estatísticas",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Olá Mundo!",
+    "name": "Sou Luiz Cristino",
+    "roles": ["Desenvolvedor Full Stack", "Desenvolvedor Mobile", "Entusiasta do Flutter", "Artesão React"],
+    "cta": "Entre em contato",
+    "view_github": "Ver GitHub"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "intro": "Comecei a programar em 2000 como hobby. Alguns projetos iniciais:",
+    "pet_projects": [
+      "Próprio OTS (Open Tibia Server) com feitiços customizados em Lua",
+      "Um renomeador de arquivos em lote usando regex",
+      "Um app de lore dos campeões do DotA em Java"
+    ],
+    "degrees_label": "Graduações",
+    "degrees": [
+      "Engenharia de Computação",
+      "Tecnologia em Análise e Desenvolvimento de Sistemas"
+    ],
+    "current": "Atualmente trabalhando com Web e apps mobile híbridos — principalmente React Native e Flutter. Me apaixonei pelo Android desde o Froyo e esse conhecimento foi valioso ao criar bridges entre Android e React Native.",
+    "next": "Próximo objetivo: Mestrado em IA. Sempre fui fascinado pelo assunto — atualmente autodidata na área."
+  },
+  "skills": {
+    "title": "Stack Tecnológica",
+    "categories": {
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Banco de Dados",
+      "tool": "Ferramentas & DevOps"
+    }
+  },
+  "stats": {
+    "title": "Estatísticas do GitHub",
+    "activity": "Atividade de Contribuições",
+    "trophies": "Troféus"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Aberto a discutir novos projetos e oportunidades — fique à vontade para me chamar.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "gitlab": "GitLab"
+  },
+  "footer": {
+    "built_with": "Feito com Astro · shadcn/ui · Tailwind CSS",
+    "rights": "Todos os direitos reservados."
+  }
+}

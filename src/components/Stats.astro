@@ -1,0 +1,66 @@
+---
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const user = 'LuizCristino';
+const theme = 'tokyonight';
+---
+
+<section id="stats" class="py-28 px-6">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-foreground mb-2">{t.stats.title}</h2>
+    <div class="h-1 w-16 bg-primary rounded-full mb-12"></div>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-4">
+      <img
+        src={`https://github-readme-stats.vercel.app/api?username=${user}&theme=${theme}&show_icons=true&hide_border=true&count_private=true&bg_color=00000000`}
+        alt="GitHub Stats"
+        class="w-full rounded-lg"
+        loading="lazy"
+      />
+      <img
+        src={`https://github-readme-stats.vercel.app/api/top-langs/?username=${user}&theme=${theme}&show_icons=true&hide_border=true&layout=compact&langs_count=8&bg_color=00000000`}
+        alt="Top Languages"
+        class="w-full rounded-lg"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="mb-4">
+      <img
+        src={`https://github-readme-streak-stats.herokuapp.com/?user=${user}&theme=${theme}&hide_border=true&background=00000000`}
+        alt="GitHub Streak"
+        class="w-full rounded-lg"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="mb-4">
+      <p class="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+        {t.stats.activity}
+      </p>
+      <img
+        src={`https://github-readme-activity-graph.vercel.app/graph?username=${user}&theme=tokyo-night&hide_border=true&area=true&bg_color=00000000`}
+        alt="Contribution Graph"
+        class="w-full rounded-lg"
+        loading="lazy"
+      />
+    </div>
+
+    <div>
+      <p class="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+        {t.stats.trophies}
+      </p>
+      <img
+        src={`https://github-profile-trophy.vercel.app/?username=${user}&theme=${theme}&no-frame=true&no-bg=true&margin-w=4&column=7`}
+        alt="GitHub Trophies"
+        class="w-full rounded-lg"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>

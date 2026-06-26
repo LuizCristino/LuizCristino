@@ -1,0 +1,49 @@
+---
+import { Badge } from './ui/badge';
+import type { Translations } from '../i18n/utils';
+import skills from '../i18n/dev_skills.json';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const categories = ['mobile', 'frontend', 'backend', 'database', 'tool'] as const;
+
+const variantMap = {
+  mobile:   'default',
+  frontend: 'secondary',
+  backend:  'accent',
+  database: 'outline',
+  tool:     'muted',
+} as const;
+
+function skillsByType(type: string) {
+  return skills.filter((s) => s.type === type).sort((a, b) => b.experience - a.experience);
+}
+---
+
+<section id="skills" class="py-28 px-6 bg-card/30">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-foreground mb-2">{t.skills.title}</h2>
+    <div class="h-1 w-16 bg-primary rounded-full mb-12"></div>
+
+    <div class="space-y-10">
+      {categories.map((cat) => (
+        <div>
+          <h3 class="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
+            {t.skills.categories[cat]}
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            {skillsByType(cat).map((skill) => (
+              <Badge variant={variantMap[cat]} className="font-mono text-sm px-3 py-1">
+                {skill.name}
+              </Badge>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

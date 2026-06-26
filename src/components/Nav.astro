@@ -1,0 +1,29 @@
+---
+import { LanguageSwitcher } from './LanguageSwitcher';
+import type { Translations } from '../i18n/utils';
+
+interface Props {
+  t: Translations;
+  locale: string;
+}
+
+const { t, locale } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<header
+  class="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 py-4 bg-background/80 backdrop-blur-md border-b border-border"
+>
+  <a href="#hero" class="font-mono text-sm font-medium">
+    <span class="text-primary">~/</span><span class="text-foreground">luizcristino</span>
+  </a>
+
+  <nav class="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+    <a href="#about" class="hover:text-foreground transition-colors">{t.nav.about}</a>
+    <a href="#skills" class="hover:text-foreground transition-colors">{t.nav.skills}</a>
+    <a href="#stats" class="hover:text-foreground transition-colors">{t.nav.stats}</a>
+    <a href="#contact" class="hover:text-foreground transition-colors">{t.nav.contact}</a>
+  </nav>
+
+  <LanguageSwitcher currentLocale={locale} base={base} client:load />
+</header>

@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "title": "Luiz Cristino — Full Stack & Mobile Developer",
+    "description": "Full Stack and Mobile Developer specializing in Flutter, React, Node.js and Laravel. Programming since 2000."
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "stats": "Stats",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello World!",
+    "name": "I'm Luiz Cristino",
+    "roles": ["Full Stack Developer", "Mobile Developer", "Flutter Enthusiast", "React Craftsman"],
+    "cta": "Get in touch",
+    "view_github": "View GitHub"
+  },
+  "about": {
+    "title": "About Me",
+    "intro": "I've started programming in 2000 as a hobby. Some early pet projects:",
+    "pet_projects": [
+      "Own OTS (Open Tibia Server) with custom spells in Lua",
+      "A file batch renamer using regex",
+      "A DotA champion lore app in Java"
+    ],
+    "degrees_label": "Degrees",
+    "degrees": [
+      "Computer Engineering",
+      "Technology in Systems Development & Analysis"
+    ],
+    "current": "Currently working with Web and hybrid mobile apps — mostly React Native and Flutter. Fell in love with Android since Froyo and that knowledge proved useful when bridging Android and React Native.",
+    "next": "Next goal: a Master's Degree in AI. Always fascinated by it — currently self-taught in the area."
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "categories": {
+      "mobile": "Mobile",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "database": "Databases",
+      "tool": "Tools & DevOps"
+    }
+  },
+  "stats": {
+    "title": "GitHub Stats",
+    "activity": "Contribution Activity",
+    "trophies": "Trophies"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Open to discussing new projects and opportunities — reach out anytime.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "gitlab": "GitLab"
+  },
+  "footer": {
+    "built_with": "Built with Astro · shadcn/ui · Tailwind CSS",
+    "rights": "All rights reserved."
+  }
+}
