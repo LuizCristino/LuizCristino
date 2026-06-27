@@ -106,7 +106,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="p-6 rounded-xl border border-border bg-card hover:border-accent/40 transition-colors">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-lg">L</div>
-            <h4 class="font-bold text-foreground">{t.about.laravel.title}</h4>
+            <div>
+              <h4 class="font-bold text-foreground">{t.about.laravel.title}</h4>
+              <span class="inline-flex items-center gap-1 mt-0.5 px-2 py-0.5 rounded text-xs font-medium bg-accent/15 text-accent border border-accent/30">
+                ★ {t.about.laravel.filament_badge}
+              </span>
+            </div>
           </div>
           <p class="text-sm text-muted-foreground leading-relaxed">{t.about.laravel.desc}</p>
         </div>

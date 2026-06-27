@@ -16,10 +16,20 @@ const ogImage = t.meta.og_image;
 ---
 
 <!doctype html>
-<html lang={lang} class="dark">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Prevent flash of unstyled content on theme load -->
+    <script is:inline>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme') || 'auto';
+          var dark = t === 'dark' || (t === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (_) {}
+      })();
+    </script>
 
     <!-- Primary SEO -->
     <title>{t.meta.title}</title>

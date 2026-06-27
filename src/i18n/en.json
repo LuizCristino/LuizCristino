@@ -49,8 +49,9 @@
       "desc": "My Android journey started with Froyo and Java, but Kotlin changed everything. Its expressiveness, null-safety, coroutines, and extension functions make Android development genuinely enjoyable. It's the language I reach for when I want code that reads like intention."
     },
     "laravel": {
-      "title": "Laravel",
-      "desc": "Laravel is what made me fall back in love with PHP. Its elegant syntax, powerful ORM, built-in queues, and the richness of its ecosystem (Forge, Vapor, Horizon) let me ship production-grade backends fast. I maintain a personal starter template and have explored Laravel microservices with event-driven email services."
+      "title": "Laravel & Filament",
+      "desc": "Laravel is what made me fall back in love with PHP. I've been a heavy contributor to the ecosystem — including packages in the modular architecture space — and rely on Filament for building complex admin panels and CRUD-heavy dashboards with elegant, maintainable code. The broader ecosystem (Forge, Vapor, Horizon) lets me ship production-grade backends fast, and I maintain a personal starter template with event-driven architecture baked in.",
+      "filament_badge": "Filament"
     }
   },
   "skills": {

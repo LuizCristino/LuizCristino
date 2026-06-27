@@ -1,5 +1,6 @@
 ---
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { ThemeToggle } from './ThemeToggle';
 import type { Translations } from '../i18n/utils';
 
 interface Props {
@@ -25,5 +26,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <a href="#contact" class="hover:text-foreground transition-colors">{t.nav.contact}</a>
   </nav>
 
-  <LanguageSwitcher currentLocale={locale} base={base} client:load />
+  <div class="flex items-center gap-1">
+    <ThemeToggle client:load />
+    <LanguageSwitcher currentLocale={locale} base={base} client:load />
+  </div>
 </header>

@@ -3,31 +3,56 @@
 @tailwind utilities;
 
 @layer base {
+  /* Carbon — Light */
   :root {
-    /* Tokyo Night */
-    --background: 237 34% 13%;
-    --foreground: 226 64% 88%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
 
-    --card: 237 34% 16%;
-    --card-foreground: 226 64% 88%;
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 9%;
 
-    --border: 234 27% 25%;
-    --input: 234 27% 25%;
-    --ring: 217 92% 76%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 221 99% 52%;
 
-    --primary: 217 92% 76%;
-    --primary-foreground: 237 34% 13%;
+    --primary: 221 99% 52%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 267 84% 81%;
-    --secondary-foreground: 237 34% 13%;
+    --secondary: 269 96% 61%;
+    --secondary-foreground: 0 0% 100%;
 
-    --accent: 115 54% 76%;
-    --accent-foreground: 237 34% 13%;
+    --accent: 177 100% 25%;
+    --accent-foreground: 0 0% 100%;
 
-    --muted: 234 27% 22%;
-    --muted-foreground: 226 30% 60%;
+    --muted: 0 0% 88%;
+    --muted-foreground: 0 0% 32%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
+  }
+
+  /* Carbon — Dark */
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 96%;
+
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 96%;
+
+    --border: 0 0% 22%;
+    --input: 0 0% 22%;
+    --ring: 219 100% 66%;
+
+    --primary: 219 100% 66%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 270 100% 80%;
+    --secondary-foreground: 0 0% 9%;
+
+    --accent: 179 70% 54%;
+    --accent-foreground: 0 0% 9%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 64%;
   }
 }
 
