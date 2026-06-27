@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "Luiz Cristino — Desenvolvedor Full Stack & Mobile",
-    "description": "Desenvolvedor Full Stack e Mobile especializado em Flutter, React, Node.js e Laravel. Programando desde 2000."
+    "description": "Desenvolvedor Full Stack e Mobile na Underwork. Especialista em Flutter, React, Kotlin, Laravel e Node.js. Programando desde 2000.",
+    "keywords": "Luiz Cristino, Desenvolvedor Full Stack, Desenvolvedor Mobile, Flutter, React, Kotlin, Laravel, Node.js, Android, TypeScript, Brasil",
+    "og_image": "https://avatars.githubusercontent.com/u/33782549?v=4"
   },
   "nav": {
     "about": "Sobre",
@@ -12,13 +14,14 @@
   "hero": {
     "greeting": "Olá Mundo!",
     "name": "Sou Luiz Cristino",
-    "roles": ["Desenvolvedor Full Stack", "Desenvolvedor Mobile", "Entusiasta do Flutter", "Artesão React"],
+    "roles": ["Desenvolvedor Full Stack", "Desenvolvedor Mobile", "Entusiasta do Flutter", "Artesão de Kotlin & Laravel"],
     "cta": "Entre em contato",
     "view_github": "Ver GitHub"
   },
   "about": {
     "title": "Sobre Mim",
-    "intro": "Comecei a programar em 2000 como hobby. Alguns projetos iniciais:",
+    "motto": "\"Você sempre pode melhorar a si mesmo\"",
+    "intro": "Programo desde 2000, começando puramente como hobby. Alguns projetos iniciais:",
     "pet_projects": [
       "Próprio OTS (Open Tibia Server) com feitiços customizados em Lua",
       "Um renomeador de arquivos em lote usando regex",
@@ -29,8 +32,26 @@
       "Engenharia de Computação",
       "Tecnologia em Análise e Desenvolvimento de Sistemas"
     ],
-    "current": "Atualmente trabalhando com Web e apps mobile híbridos — principalmente React Native e Flutter. Me apaixonei pelo Android desde o Froyo e esse conhecimento foi valioso ao criar bridges entre Android e React Native.",
-    "next": "Próximo objetivo: Mestrado em IA. Sempre fui fascinado pelo assunto — atualmente autodidata na área."
+    "current": "Atualmente na <a href=\"https://www.underwork.com.br\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Underwork</a>, focado em Web e apps mobile híbridos — principalmente React Native e Flutter. Me apaixonei pelo Android desde o Froyo e esse conhecimento foi valioso ao criar bridges entre Android nativo e React Native.",
+    "next": "Próximo objetivo: Mestrado em IA. Sempre fui fascinado pelo assunto — atualmente autodidata na área.",
+    "community_title": "Comunidade & Open Source",
+    "community_intro": "Orgulhoso Arctic Code Vault Contributor — código que escrevi está preservado por 1.000+ anos em Svalbard, Noruega. Contribuí para vários projetos open-source populares e acredito em retribuir ao ecossistema que moldou minha carreira.",
+    "community_items": [
+      { "name": "React Native", "desc": "Contribuí para o framework mobile multiplataforma do Facebook" },
+      { "name": "Chakra UI", "desc": "Contribuí para a popular biblioteca de componentes React acessíveis" },
+      { "name": "React Native Maps", "desc": "Contribuí para a biblioteca de mapas mais usada no React Native" },
+      { "name": "Laravel Modules", "desc": "Contribuí para o pacote de arquitetura modular do nWidart para Laravel" },
+      { "name": "node-osc", "desc": "Contribuí para a implementação do protocolo Open Sound Control em Node.js" }
+    ],
+    "passions_title": "O que Amo Construir",
+    "kotlin": {
+      "title": "Kotlin",
+      "desc": "Minha jornada no Android começou com Froyo e Java, mas o Kotlin mudou tudo. Sua expressividade, null-safety, coroutines e extension functions tornam o desenvolvimento Android genuinamente prazeroso. É a linguagem que escolho quando quero código que lê como intenção."
+    },
+    "laravel": {
+      "title": "Laravel",
+      "desc": "O Laravel foi o que me fez me apaixonar novamente pelo PHP. Sua sintaxe elegante, ORM poderoso, filas nativas e a riqueza do ecossistema (Forge, Vapor, Horizon) me permitem entregar backends prontos para produção rapidamente. Mantenho um template pessoal e já explorei microserviços Laravel com serviços de e-mail orientados a eventos."
+    }
   },
   "skills": {
     "title": "Stack Tecnológica",
@@ -53,7 +74,8 @@
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "gitlab": "GitLab"
+    "gitlab": "GitLab",
+    "company": "Underwork"
   },
   "footer": {
     "built_with": "Feito com Astro · shadcn/ui · Tailwind CSS",

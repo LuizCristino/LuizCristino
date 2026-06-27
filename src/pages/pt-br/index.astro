@@ -13,7 +13,7 @@ const locale = 'pt-br';
 const t = useTranslations(locale);
 ---
 
-<Layout title={t.meta.title} description={t.meta.description} lang="pt-BR">
+<Layout t={t} lang="pt-BR" canonicalPath="/pt-br/">
   <Nav t={t} locale={locale} />
   <main>
     <Hero t={t} />

@@ -1,13 +1,18 @@
 ---
 import '../styles/globals.css';
+import type { Translations } from '../i18n/utils';
 
 interface Props {
-  title: string;
-  description: string;
+  t: Translations;
   lang: string;
+  canonicalPath?: string;
 }
 
-const { title, description, lang } = Astro.props;
+const { t, lang, canonicalPath = '/' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const siteUrl = 'https://luizcristino.github.io/LuizCristino';
+const canonical = `${siteUrl}${canonicalPath}`;
+const ogImage = t.meta.og_image;
 ---
 
 <!doctype html>
@@ -15,16 +20,60 @@ const { title, description, lang } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+
+    <!-- Primary SEO -->
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <meta name="keywords" content={t.meta.keywords} />
     <meta name="author" content="Luiz Cristino" />
-    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}images/profiles/profile_000.png`} />
-    <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'pt-BR' ? 'pt_BR' : 'en_US'} />
+    <meta property="og:site_name" content="Luiz Cristino" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={t.meta.title} />
+    <meta name="twitter:description" content={t.meta.description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href={`${base}/images/profiles/profile_000.png`} />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Luiz Cristino",
+      "url": siteUrl,
+      "image": ogImage,
+      "jobTitle": "Full Stack & Mobile Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Underwork",
+        "url": "https://www.underwork.com.br"
+      },
+      "sameAs": [
+        "https://github.com/LuizCristino",
+        "https://gitlab.com/LuizCristino",
+        "https://www.linkedin.com/in/luizpaulocristino/"
+      ],
+      "knowsAbout": ["Flutter", "React", "Kotlin", "Laravel", "Node.js", "TypeScript", "Android", "React Native"]
+    })} />
   </head>
   <body>
     <slot />

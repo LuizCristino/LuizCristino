@@ -1,7 +1,9 @@
 {
   "meta": {
     "title": "Luiz Cristino — Full Stack & Mobile Developer",
-    "description": "Full Stack and Mobile Developer specializing in Flutter, React, Node.js and Laravel. Programming since 2000."
+    "description": "Full Stack and Mobile Developer at Underwork. Specializing in Flutter, React, Kotlin, Laravel and Node.js. Programming since 2000.",
+    "keywords": "Luiz Cristino, Full Stack Developer, Mobile Developer, Flutter, React, Kotlin, Laravel, Node.js, Android, TypeScript, Brazil",
+    "og_image": "https://avatars.githubusercontent.com/u/33782549?v=4"
   },
   "nav": {
     "about": "About",
@@ -12,13 +14,14 @@
   "hero": {
     "greeting": "Hello World!",
     "name": "I'm Luiz Cristino",
-    "roles": ["Full Stack Developer", "Mobile Developer", "Flutter Enthusiast", "React Craftsman"],
+    "roles": ["Full Stack Developer", "Mobile Developer", "Flutter Enthusiast", "Kotlin & Laravel Craftsman"],
     "cta": "Get in touch",
     "view_github": "View GitHub"
   },
   "about": {
     "title": "About Me",
-    "intro": "I've started programming in 2000 as a hobby. Some early pet projects:",
+    "motto": "\"You can always improve yourself\"",
+    "intro": "I've been programming since 2000, starting purely as a hobby. Some early pet projects:",
     "pet_projects": [
       "Own OTS (Open Tibia Server) with custom spells in Lua",
       "A file batch renamer using regex",
@@ -29,8 +32,26 @@
       "Computer Engineering",
       "Technology in Systems Development & Analysis"
     ],
-    "current": "Currently working with Web and hybrid mobile apps — mostly React Native and Flutter. Fell in love with Android since Froyo and that knowledge proved useful when bridging Android and React Native.",
-    "next": "Next goal: a Master's Degree in AI. Always fascinated by it — currently self-taught in the area."
+    "current": "Currently at <a href=\"https://www.underwork.com.br\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">Underwork</a>, focused on Web and hybrid mobile apps — mostly React Native and Flutter. Fell in love with Android since Froyo and that knowledge proved invaluable when bridging native Android and React Native.",
+    "next": "Next goal: a Master's Degree in AI. Always fascinated by it — currently self-taught in the area.",
+    "community_title": "Community & Open Source",
+    "community_intro": "Proud Arctic Code Vault Contributor — code I wrote is preserved for 1,000+ years in Svalbard, Norway. I've contributed to several popular open-source projects and believe in giving back to the ecosystem that shaped my career.",
+    "community_items": [
+      { "name": "React Native", "desc": "Contributed to Facebook's cross-platform mobile framework" },
+      { "name": "Chakra UI", "desc": "Contributed to the popular accessible React component library" },
+      { "name": "React Native Maps", "desc": "Contributed to the de-facto maps library for RN apps" },
+      { "name": "Laravel Modules", "desc": "Contributed to nWidart's modular architecture package for Laravel" },
+      { "name": "node-osc", "desc": "Contributed to the Open Sound Control protocol implementation for Node.js" }
+    ],
+    "passions_title": "What I Love Building With",
+    "kotlin": {
+      "title": "Kotlin",
+      "desc": "My Android journey started with Froyo and Java, but Kotlin changed everything. Its expressiveness, null-safety, coroutines, and extension functions make Android development genuinely enjoyable. It's the language I reach for when I want code that reads like intention."
+    },
+    "laravel": {
+      "title": "Laravel",
+      "desc": "Laravel is what made me fall back in love with PHP. Its elegant syntax, powerful ORM, built-in queues, and the richness of its ecosystem (Forge, Vapor, Horizon) let me ship production-grade backends fast. I maintain a personal starter template and have explored Laravel microservices with event-driven email services."
+    }
   },
   "skills": {
     "title": "Tech Stack",
@@ -53,7 +74,8 @@
     "email": "Email",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "gitlab": "GitLab"
+    "gitlab": "GitLab",
+    "company": "Underwork"
   },
   "footer": {
     "built_with": "Built with Astro · shadcn/ui · Tailwind CSS",

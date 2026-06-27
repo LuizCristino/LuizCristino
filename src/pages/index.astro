@@ -13,7 +13,7 @@ const locale = 'en';
 const t = useTranslations(locale);
 ---
 
-<Layout title={t.meta.title} description={t.meta.description} lang={locale}>
+<Layout t={t} lang={locale} canonicalPath="/">
   <Nav t={t} locale={locale} />
   <main>
     <Hero t={t} />

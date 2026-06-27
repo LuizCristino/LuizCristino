@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.0",
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/tailwind": "^5.1.0",
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
