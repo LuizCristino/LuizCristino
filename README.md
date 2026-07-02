@@ -12,10 +12,9 @@
 
 ## 🧑‍💻 About Me
 
-- 🔭 Currently building my **Flutter-powered GitHub Portfolio Page**
 - 💻 Full Stack developer focused on **Web & Mobile** applications
 - 🌱 Always learning — currently diving deeper into cross-platform dev with **Flutter**
-- 💬 Ask me about **Flutter · React · Node.js · PHP/Laravel · PostgreSQL**
+- 💬 Ask me about **React · Node.js · PHP/Laravel · PostgreSQL · Flutter**
 - 📫 Reach me at **luiz.cristino@underwork.com.br**
 - ⚡ Fun fact: I can ship the same product on Android, iOS, and Web from a single codebase
 
