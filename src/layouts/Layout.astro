@@ -9,7 +9,9 @@ interface Props {
 }
 
 const { t, lang, canonicalPath = '/' } = Astro.props;
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// SHA-256 hash of luiz.cristino@underwork.com.br
+const gravatarUrl =
+  'https://gravatar.com/avatar/2869af0d38b28e940b7cc0ed43e4f690b74791bfe2fa0ec4d69b6d1048d08931';
 const siteUrl = 'https://luizcristino.github.io/LuizCristino';
 const canonical = `${siteUrl}${canonicalPath}`;
 const ogImage = t.meta.og_image;
@@ -54,7 +56,7 @@ const ogImage = t.meta.og_image;
     <meta name="twitter:image" content={ogImage} />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href={`${base}/images/profiles/profile_000.png`} />
+    <link rel="icon" type="image/png" href={`${gravatarUrl}?s=64`} />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

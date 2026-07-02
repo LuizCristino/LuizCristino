@@ -6,7 +6,9 @@ interface Props {
 }
 
 const { t } = Astro.props;
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// SHA-256 hash of luiz.cristino@underwork.com.br
+const gravatarUrl =
+  'https://gravatar.com/avatar/2869af0d38b28e940b7cc0ed43e4f690b74791bfe2fa0ec4d69b6d1048d08931?s=512';
 ---
 
 <section id="about" class="py-28 px-6">
@@ -55,7 +57,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <div class="relative">
           <div class="w-56 h-56 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-lg shadow-primary/10">
             <img
-              src={`${base}/images/profiles/profile_000.png`}
+              src={gravatarUrl}
               alt="Luiz Cristino"
               class="w-full h-full object-cover"
             />
